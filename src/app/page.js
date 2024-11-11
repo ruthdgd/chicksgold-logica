@@ -81,7 +81,6 @@ export default function Home() {
     }
   return steps;
   };
-  const gcd = (a, b) => (b === 0 ? a : gcd(b, a % b));
 
   return (
     <main className={styles.main}>
@@ -114,7 +113,7 @@ export default function Home() {
           required
         />
 
-        <button type="submit">Submit</button>
+        <button type="submit">Calcular</button>
       </form>
       {solutionFound && (
         <div>
